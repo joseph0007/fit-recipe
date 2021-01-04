@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/fitrecipe-logo.png" type="image/png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body class="container">
+    <!-- HEADER -->
+    <header class="header header-main">
+      <!-- random facts  -->
+      <!-- <div class="header__facts">
+        If you want to loose weight you just need to follow: Calories in
+        calories out!
+      </div> -->
+
+      <div class="header__bar-container">
+        <!-- header-bar logo -->
+        <img
+          src="img/fitrecipe-logo-black.png"
+          alt="logo"
+          srcset=""
+          class="header__logo"
+        />
+
+        <!-- logged in btn -->
+        <div class="header__auth-container">
+          <button class="btn btn-auth">Signup</button>
+          <button class="btn btn-auth">Login</button>
+          <!-- <a href="#" class="header__profile">
+            <img
+              src="img/profile.JPG"
+              alt="profile image"
+              class="header__profile-image"
+            />
+            <span>Joseph</span>
+          </a> -->
+        </div>
+
+        <!-- explore btn -->
+        <button class="btn btn-nav">Explore&excl;</button>
+      </div>
+
+      <!-- main text -->
+      <div class="header__center-container">
+        <h1 class="header__main header__main--top">fit</h1>
+        <h1 class="header__main header__main--bottom">recipe</h1>
+      </div>
+    </header>
+
+    <!-- MAIN SECTION -->
+    <main class="main">
+      <!-- search bar -->
+      <div class="search">
+        <form action="/" class="search__form">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            class="search__input"
+            placeholder="Search for your fav recipes..."
+          />
+          <button class="btn search__btn">search</button>
+        </form>
+      </div>
+
+      <!-- recipe display menu -->
+      <div class="recipe-container">
+        <div class="card" id="1">
+          <div class="card__side card__front">
+            <img
+              class="card__image"
+              src="/img/fitCover-1.jpg"
+              alt="recipe image"
+              srcset=""
+            />
+            <h3 class="card__title">fruit salad</h3>
+            <ul class="card__list">
+              <li>
+                <svg class="card__icon card__icon--1">
+                  <use xlink:href="img/sprite.svg#icon-hour-glass"></use>
+                </svg>
+                <span class="card__list-text">10 min</span>
+              </li>
+              <li>
+                <svg class="card__icon card__icon--2">
+                  <use xlink:href="img/sprite.svg#icon-spoon-knife"></use>
+                </svg>
+                <span class="card__list-text">1 servings</span>
+              </li>
+              <li>
+                <svg class="card__icon card__icon--3">
+                  <use xlink:href="img/sprite.svg#icon-fire"></use>
+                </svg>
+                <span class="card__list-text">257 calories</span>
+              </li>
+              <li>
+                <svg class="card__icon card__icon--4">
+                  <use xlink:href="img/sprite.svg#icon-quill"></use>
+                </svg>
+                <span class="card__list-text">Joseph</span>
+              </li>
+            </ul>
+
+            <!-- card button -->
+            <div class="card__btn-container">
+              <button class="btn card__btn macro-btn">View macros</button>
+              <button class="btn card__btn">View</button>
+            </div>
+          </div>
+
+          <!-- back side -->
+          <div class="card__side card__back">
+            <button class="btn btn__delete btn__delete--white card__delete">
+              &times;
+            </button>
+            <ul class="card__back-list">
+              <li>
+                carbs:
+                <span>60</span>g
+              </li>
+              <li>
+                protein:
+                <span>60</span>g
+              </li>
+              <li>
+                fats:
+                <span>60</span>g
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" id="2">
+          <div class="card__side card__front">
+            <img
+              class="card__image"
+              src="/img/fitCover-2.jpg"
+              alt="recipe image"
+              srcset=""
+            />
+            <h3 class="card__title">something delicious</h3>
+            <ul class="card__list">
+              <li>
+                <svg class="card__icon card__icon--1">
+                  <use xlink:href="img/sprite.svg#icon-hour-glass"></use>
+                </svg>
+                <span class="card__list-text">25 min</span>
+              </li>
+              <li>
+                <svg class="card__icon card__icon--2">
+                  <use xlink:href="img/sprite.svg#icon-spoon-knife"></use>
+                </svg>
+                <span class="card__list-text">1 servings</span>
+              </li>
+              <li>
+                <svg class="card__icon card__icon--3">
+                  <use xlink:href="img/sprite.svg#icon-fire"></use>
+                </svg>
+                <span class="card__list-text">690 calories</span>
+              </li>
+              <li>
+                <svg class="card__icon card__icon--4">
+                  <use xlink:href="img/sprite.svg#icon-quill"></use>
+                </svg>
+                <span class="card__list-text">ultramon</span>
+              </li>
+            </ul>
+
+            <!-- card button -->
+            <div class="card__btn-container">
+              <button class="btn card__btn macro-btn">View macros</button>
+              <button class="btn card__btn">View</button>
+            </div>
+          </div>
+
+          <!-- back side -->
+          <div class="card__side card__back">
+            <button class="btn btn__delete btn__delete--white card__delete">
+              &times;
+            </button>
+            <ul class="card__back-list">
+              <li>
+                carbs:
+                <span>60</span>g
+              </li>
+              <li>
+                protein:
+                <span>60</span>g
+              </li>
+              <li>
+                fats:
+                <span>60</span>g
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" id="3">
+          <div class="card__side card__front">
+            <img
+              class="card__image"
+              src="/img/fitCover-3.jpg"
+              alt="recipe image"
+              srcset=""
+            />
+            <h3 class="card__title">strawberry oatmeal</h3>
+            <ul class="card__list">
+              <li>
+                <svg class="card__icon card__icon--1">
+                  <use xlink:href="img/sprite.svg#icon-hour-glass"></use>
+                </svg>
+                <span class="card__list-text">30 min</span>
+              </li>
+              <li>
+                <svg class="card__icon card__icon--2">
+                  <use xlink:href="img/sprite.svg#icon-spoon-knife"></use>
+                </svg>
+                <span class="card__list-text">4 servings</span>
+              </li>
+              <li>
+                <svg class="card__icon card__icon--3">
+                  <use xlink:href="img/sprite.svg#icon-fire"></use>
+                </svg>
+                <span class="card__list-text">598 calories</span>
+              </li>
+              <li>
+                <svg class="card__icon card__icon--4">
+                  <use xlink:href="img/sprite.svg#icon-quill"></use>
+                </svg>
+                <span class="card__list-text">Joe</span>
+              </li>
+            </ul>
+
+            <!-- card button -->
+            <div class="card__btn-container">
+              <button class="btn card__btn macro-btn">View macros</button>
+              <button class="btn card__btn">View</button>
+            </div>
+          </div>
+
+          <!-- back side -->
+          <div class="card__side card__back">
+            <button class="btn btn__delete btn__delete--white card__delete">
+              &times;
+            </button>
+            <ul class="card__back-list">
+              <li>
+                carbs:
+                <span>60</span>g
+              </li>
+              <li>
+                protein:
+                <span>60</span>g
+              </li>
+              <li>
+                fats:
+                <span>60</span>g
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="main__util-bottom">Hope you like the delicious recipes!!</div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <img
+        src="img/fitrecipe-logo.png"
+        alt="logo"
+        srcset=""
+        class="footer__logo"
+      />
+    </footer>
+
+    <!-- scripts -->
+    <script src="/js/vendors/noframework.waypoints.min.js"></script>
+    <script src="/js/bundle.js"></script>
+  </body>
+</html>
+
+<!-- <nav class="nav">
+        <button class="btn nav__delete">&times;</button>
+        <ul class="nav__list nav__list-main">
+          <li>
+            <span class="nav__head">cuisines</span>
+            <ul class="nav__list nav__list-cuisines">
+              <li><a href="#">Ainu</a></li>
+              <li><a href="#">Albanian</a></li>
+              <li><a href="#">Argentine</a></li>
+              <li><a href="#">Andhra</a></li>
+              <li><a href="#">American</a></li>
+              <li><a href="#">Anglo-Indian</a></li>
+              <li><a href="#">Arab</a></li>
+              <li><a href="#">Armenian</a></li>
+              <li><a href="#">Assyrian</a></li>
+              <li><a href="#">Awadhi</a></li>
+              <li><a href="#">Azerbaijani</a></li>
+              <li><a href="#">Balochi</a></li>
+              <li><a href="#">Belarusian</a></li>
+              <li><a href="#">Bangladeshi</a></li>
+              <li><a href="#">Bengali</a></li>
+              <li><a href="#">Berber</a></li>
+              <li><a href="#">Brazilian</a></li>
+              <li><a href="#">British</a></li>
+              <li><a href="#">Buddhist</a></li>
+              <li><a href="#">Bulgarian</a></li>
+              <li><a href="#">Cajun</a></li>
+              <li><a href="#">Cantonese</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="nav__head">tags</span>
+            <ul class="nav__list nav__list-tags">
+              <li><a href="#">savoury</a></li>
+              <li><a href="#">sweet</a></li>
+              <li><a href="#">not-specified</a></li>
+              <li><a href="#">others</a></li>
+            </ul>
+          </li>
+          <li>
+            <span class="nav__head">category</span>
+            <ul class="nav__list nav__list-category">
+              <li><a href="#">vegan</a></li>
+              <li><a href="#">gluten-free</a></li>
+              <li><a href="#">nuts-free</a></li>
+              <li><a href="#">sugar-free</a></li>
+              <li><a href="#">low-glycemic-index</a></li>
+              <li><a href="#">vegetarian</a></li>
+              <li><a href="#">non-vegetarian</a></li>
+              <li><a href="#">eggitarian</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav> -->

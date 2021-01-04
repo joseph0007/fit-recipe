@@ -1,0 +1,15 @@
+.footer {
+  background-image: linear-gradient(
+    to right bottom,
+    $light-accent-color,
+    $dark-accent-color
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__logo {
+    margin-top: 2rem;
+    width: 10rem;
+  }
+}

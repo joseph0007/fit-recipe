@@ -1,0 +1,18 @@
+.loading {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-white;
+  z-index: 999;
+
+  svg {
+    display: block;
+    width: 10rem;
+    height: 10rem;
+    fill: $light-accent-color;
+    animation: spin 5s linear 0s infinite;
+  }
+}

@@ -1,0 +1,30 @@
+@import 'abstracts/functions.scss';
+@import 'abstracts/mixins.scss';
+@import 'abstracts/variables.scss';
+@import 'abstracts/utils.scss';
+
+@import 'base/base.scss';
+@import 'base/typography.scss';
+@import 'base/animations.scss';
+
+@import 'components/btn.scss';
+@import 'components/nav.scss';
+@import 'components/search.scss';
+@import 'components/card.scss';
+@import 'components/form.scss';
+@import 'components/vertical-card.scss';
+@import 'components/floatbox.scss';
+@import 'components/error.scss';
+@import 'components/nutriprofile.scss';
+@import 'components/loading.scss';
+
+@import 'layout/grid.scss';
+@import 'layout/header.scss';
+@import 'layout/header-common.scss';
+@import 'layout/footer.scss';
+@import 'layout/main_section.scss';
+@import 'layout/recipe-container.scss';
+
+@import 'pages/home.scss';
+@import 'pages/login.scss';
+@import 'pages/recipe.scss';

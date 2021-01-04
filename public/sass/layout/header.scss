@@ -1,0 +1,153 @@
+.header {
+  &-main {
+    background-image: linear-gradient(
+        rgba($dark-accent-color, 0.4),
+        rgba($dark-accent-color, 0.4)
+      ),
+      url('../img/fitCover-3.jpg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__center-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::after {
+      @include clearfix;
+    }
+  }
+
+  &__main {
+    font-family: 'Lobster', cursive, sans-serif;
+    font-weight: 600;
+    font-size: 12rem;
+    color: $primary-background-color;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    text-shadow: 1rem 0.5rem 1px rgba($color-black, 0.2);
+
+    &--top {
+      float: left;
+    }
+
+    &--bottom {
+      float: right;
+      transform: translate(-2%, 30%);
+    }
+  }
+
+  &__facts {
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 400;
+    color: $primary-background-color;
+    margin-top: 1.5rem;
+    text-decoration: underline;
+  }
+
+  &__bar-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: $secondary-background-color;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.9;
+
+    &--sticky {
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      z-index: 100;
+    }
+  }
+
+  &__logo {
+    display: block;
+    width: 6rem;
+    height: 6rem;
+    margin-left: 2rem;
+    margin-right: auto;
+    opacity: 0.7;
+  }
+
+  &__auth-container {
+    // position: absolute;
+    // top: 14%;
+    // left: 4%;
+    transition: all 0.3s;
+    margin-right: 2rem;
+
+    .btn-auth {
+      @include whiteButton;
+    }
+
+    .btn-auth:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+    // &--sticky {
+    //   position: fixed;
+    //   top: 2%;
+    //   left: 2%;
+    //   opacity: 0.9;
+    //   z-index: 100;
+    // }
+  }
+
+  &__profile {
+    &:link,
+    &:visited {
+      @include whiteButton;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      padding: 0.65rem 2.5rem;
+    }
+
+    &-image {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 50%;
+      margin-right: 1rem;
+    }
+
+    span {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.btn-nav {
+  @include whiteButton;
+  // position: absolute;
+  // right: 8%;
+  // top: 14%;
+  margin-right: 2rem;
+  transition: all 0.5s;
+
+  // &--sticky {
+  //   position: fixed;
+  //   top: 2%;
+  //   right: 8%;
+  //   opacity: 0.9;
+  //   z-index: 100;
+  // }
+
+  // &--animateIn {
+  //   animation: fadeInRight 0.5s ease-in;
+  //   animation-fill-mode: forwards;
+  // }
+
+  // &--animateOut {
+  //   animation: fadeOutRight 0.5s ease-in;
+  //   animation-fill-mode: forwards;
+  // }
+}

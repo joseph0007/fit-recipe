@@ -1,0 +1,56 @@
+.btn {
+  border: none;
+  font-family: inherit;
+  font-weight: inherit;
+  background-color: transparent;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn-list {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+  border: 1px solid $light-accent-color;
+  flex: 0 0 40%;
+  font-size: 1.75rem;
+  transition: all 0.3s;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &:hover {
+    background-color: $light-accent-color;
+    color: $color-white;
+    transform: translateY(-2px);
+  }
+}
+
+.btn__delete {
+  position: fixed;
+  top: 1rem;
+  right: 2rem;
+  font-size: 3rem;
+  line-height: 1;
+  padding: 1px;
+  font-weight: 600;
+  background-color: transparent;
+  transition: all 1s;
+  z-index: 999;
+
+  &--white {
+    color: $color-white;
+  }
+
+  &:hover {
+    transform: scale(1.3);
+  }
+}
+
+// .btn__back {
+//   @extend .btn__delete;
+//   left: 2rem;
+// }

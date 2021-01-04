@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/fitrecipe-logo.png" type="image/png" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courgette&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- loading div -->
+    <!-- <div class="loading">
+      <svg class="card__icon card__icon--1">
+        <use xlink:href="img/sprite.svg#icon-spinner10"></use>
+      </svg>
+    </div> -->
+
+    <header class="header">
+      <div class="header__bar-container">
+        <!-- header-bar logo -->
+        <img
+          src="img/fitrecipe-logo-black.png"
+          alt="logo"
+          srcset=""
+          class="header__logo"
+        />
+
+        <!-- logged in btn -->
+        <div class="header__auth-container">
+          <a href="#" class="header__profile">
+            <img
+              src="img/profile.JPG"
+              alt="profile image"
+              class="header__profile-image"
+            />
+            <span>Joseph</span>
+          </a>
+        </div>
+
+        <!-- explore btn -->
+        <button class="btn btn-nav">Explore&excl;</button>
+      </div>
+    </header>
+
+    <!-- the form -->
+    <form action="/" class="form-upload">
+      <div class="upload__title-box">
+        <label for="title" class="upload__label">Title</label>
+        <input type="text" name="name" id="title" required />
+      </div>
+
+      <div class="upload__image-box">
+        <label for="image" class="upload__label">Image</label>
+        <input type="file" name="photo" id="image" accept="image/*" required />
+      </div>
+
+      <div class="upload__time-box">
+        <label for="time" class="upload__label">cooking time</label>
+        <input
+          type="text"
+          name="cookingTime"
+          id="time"
+          placeholder="time in minutes :)"
+          required
+        />
+      </div>
+
+      <div class="upload__servings-box">
+        <label for="servings" class="upload__label">servings</label>
+        <input type="text" name="servings" id="servings" required />
+      </div>
+
+      <div class="upload__desc-box">
+        <label for="desc" class="upload__label">desc</label>
+        <textarea
+          name="description"
+          id="desc"
+          class="upload__textarea"
+        ></textarea>
+      </div>
+
+      <div class="upload__health-box">
+        <h3 class="heading-3">Health benefits</h3>
+        <!-- <label for="desc" class="upload__label">health benefits</label>
+        <input type="text" name="health" id="health" required /> -->
+        <!-- id="health" -->
+        <div class="upload__inner-health">
+          <input type="text" name="health-1" />
+        </div>
+        <button data-for="health" class="btn upload__delete-button">
+          remove
+        </button>
+        <button class="btn upload__add-button" data-for="health">Add</button>
+      </div>
+
+      <div class="upload__instructions-box">
+        <h3 class="heading-3">instructions</h3>
+        <!-- <label for="instructions">instructions</label>
+        <input type="text" name="instructions" id="instructions" required /> -->
+        <div class="upload__inner-instructions">
+          <input type="text" name="instructions-1" required />
+        </div>
+        <button data-for="instructions" class="btn upload__delete-button">
+          remove
+        </button>
+        <button class="btn upload__add-button" data-for="instructions">
+          Add
+        </button>
+      </div>
+
+      <div class="upload__author-box">
+        <div class="upload__author-box--1">
+          <label for="name" class="upload__label">name</label>
+          <input type="text" name="author" id="name" required />
+        </div>
+        <div class="upload__author-box--2">
+          <label for="original-link" class="upload__label"
+            >Where did you find it!!</label
+          >
+          <input
+            type="text"
+            name="linkToOriginal"
+            id="original-link"
+            required
+          />
+        </div>
+      </div>
+
+      <div class="upload__choices-box">
+        <select name="select-el" id="select-el"></select>
+      </div>
+
+      <div class="upload__tags-box">
+        <input type="checkbox" id="tag1" name="tag1" value="vegan" />
+        <label for="tag1" class="upload__label"> vegan</label>
+        <input type="checkbox" id="tag2" name="tag2" value="gluten-free" />
+        <label for="tag2" class="upload__label"> gluten-free</label>
+        <input type="checkbox" id="tag3" name="tag3" value="nuts-free" />
+        <label for="tag3" class="upload__label"> nuts-free</label>
+        <input type="checkbox" id="tag4" name="tag4" value="sugar-free" />
+        <label for="tag4" class="upload__label"> sugar-free</label>
+        <input type="checkbox" id="tag5" name="tag5" value="vegetarian" />
+        <label for="tag5" class="upload__label"> vegetarian</label>
+        <input type="checkbox" id="tag6" name="tag6" value="non-vegetarian" />
+        <label for="tag6" class="upload__label"> non-vegetarian</label>
+      </div>
+
+      <div class="upload__category-box">
+        <input
+          type="radio"
+          name="category"
+          id="radio1"
+          value="sweet"
+          class="upload__radio"
+        />
+        <label for="radio1" class="upload__label">sweet</label>
+        <input
+          type="radio"
+          name="category"
+          id="radio2"
+          value="savoury"
+          class="upload__radio"
+        />
+        <label for="radio1" class="upload__label">savoury</label>
+        <input
+          type="radio"
+          name="category"
+          id="radio3"
+          value="not-specified"
+          class="upload__radio"
+        />
+        <label for="radio1" class="upload__label">not-specified</label>
+        <input
+          type="radio"
+          name="category"
+          id="radio4"
+          value="others"
+          class="upload__radio"
+        />
+        <label for="radio1" class="upload__label">others</label>
+      </div>
+
+      <div class="upload__ingredients-box">
+        <div class="upload__inner-ingredients upload__inner-ingredients--1">
+          <label for="ingredient-1" class="upload__label">ingredient-1</label>
+          <input type="text" name="ingredient-1" id="ingredient-1" required />
+          <label for="quantity-1" class="upload__label">quantity-1</label>
+          <input type="text" name="quantity-1" id="quantity-1" required />
+          <select name="select-unit-1" class="select-unit"></select>
+          <!-- <input
+            type="checkbox"
+            name="is-set"
+            id="checkbox-1"
+            hidden
+            required
+          /> -->
+          <div class="upload__checkbox">
+            <svg style="height: 4.5rem; width: 4.5rem; display: block">
+              <use
+                id="checkbox-1"
+                xlink:href="img/sprite.svg#icon-spinner10"
+              ></use>
+            </svg>
+          </div>
+
+          <input
+            type="text"
+            id="upload__hidden-1"
+            name="nutrientProfile-1"
+            hidden
+            required
+          />
+          <button data-for="1" class="upload__get-nutri">
+            Get nutritional info
+          </button>
+          <!-- <button data-for="1" class="upload__set-nutri">
+            input nutritional info
+          </button> -->
+        </div>
+
+        <!-- buttons -->
+        <button class="btn upload__add-ingredients">Add ingredient</button>
+        <button class="btn upload__delete-ingredients">
+          Delete ingredient
+        </button>
+      </div>
+
+      <!-- submit form button -->
+      <button type="submit" class="btn upload__btn-submit">Submit</button>
+    </form>
+
+    <!-- scripts -->
+    <script src="/js/vendors/noframework.waypoints.min.js"></script>
+    <script src="/js/bundle.js"></script>
+  </body>
+</html>
+
+<!-- <div class="nutriprofile">
+  <button class="btn btn__delete">&times;</button> -->
+
+<!-- <ul class="nutriprofile__notes">
+    <li>
+      check if the nutriprofile is raw or enriched with vitamins -- because this
+      may inflate the nutrition
+    </li>
+    <li>
+      if not getting the accurate food nutriprofile then try different
+      combination of words as food,raw or food,unbranded, etc
+    </li>
+    <li>all the measurements are calculated per 100g basis</li>
+    <li>
+      some food may not be available in the USDA api and so you have to input
+      data on your own
+    </li>
+  </ul>
+
+  <div class="nutriprofile__inner-box">
+    <div class="nutriprofile__card">
+      <h4 class="nutriprofile__desc">Oats</h4>
+      <p class="paragraph">ingredient</p>
+      <div class="nutriprofile__macros-box">
+        <div class="nutriprofile__macros">
+          <h5 class="heading-5">Carbohydrate</h5>
+          <span>60g</span>
+        </div>
+
+        <div class="nutriprofile__macros">
+          <h5 class="heading-5">protein</h5>
+          <span>60g</span>
+        </div>
+      </div>
+      <button class="nutriprofile__btn nutriprofile__btn-view">
+        view entire nutrients
+      </button>
+      <button class="nutriprofile__btn nutriprofile__btn-select">select</button>
+    </div>
+  </div> -->
+
+<!-- <div class="nutriprofile__entire-view">
+    <button class="btn btn__delete btn-back">&larr;</button>
+    <h4 class="nutriprofile__desc">Oats</h4>
+
+    <p class="paragraph">ingredients</p>
+
+    <div class="nutriprofile__macros-box">
+      <div class="nutriprofile__macros">
+        <h5 class="heading-5">Carbohydrate</h5>
+        <span>60g</span>
+      </div>
+
+      <div class="nutriprofile__macros">
+        <h5 class="heading-5">protein</h5>
+        <span>60g</span>
+      </div>
+    </div>
+
+    <div class="nutriprofile__micros-box">
+      <div class="nutriprofile__micros">
+        <h5 class="heading-5">vitamin a</h5>
+        <span>4000iu</span>
+      </div>
+
+      <div class="nutriprofile__micros">
+        <h5 class="heading-5">zinc</h5>
+        <span>1mcg</span>
+      </div>
+    </div>
+  </div>
+</div> -->

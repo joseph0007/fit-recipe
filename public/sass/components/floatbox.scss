@@ -1,0 +1,39 @@
+.floatbox {
+  list-style: none;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  padding: 2rem;
+  background-color: $color-white;
+  opacity: 0.9;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  text-transform: capitalize;
+  font-size: 1.25rem;
+  border-radius: 10px;
+
+  & > *:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &__tag-list {
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  svg {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    fill: $light-accent-color;
+  }
+}

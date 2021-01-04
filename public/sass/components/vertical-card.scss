@@ -1,0 +1,23 @@
+.vertical-card {
+  margin: 3rem auto;
+  width: 60%;
+  box-shadow: 0 0 5px 5px rgba($dark-accent-color, 0.5);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: all 0.3s;
+
+  h2 {
+    writing-mode: vertical-rl;
+    padding: 2rem 4rem;
+    background-image: linear-gradient($light-accent-color, $dark-accent-color);
+    color: $color-white;
+    align-self: stretch;
+    text-align: center;
+  }
+
+  &:hover {
+    transform: translateY(-2%);
+  }
+}

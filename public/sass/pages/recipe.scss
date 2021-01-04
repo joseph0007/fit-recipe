@@ -1,0 +1,146 @@
+.recipe {
+  &__title {
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 0.5rem 0.5rem 0 rgba($color-black, 0.1);
+    transition: all 0.4s ease-out;
+
+    align-self: center;
+
+    &:hover {
+      //   font-size: 3.5rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__image-container {
+    width: 90%;
+    height: 50rem;
+    margin: 0 auto;
+    @include genericShadow;
+    border-radius: 10px;
+    overflow: hidden;
+
+    position: relative;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  //   &__nutri {
+  //   }
+
+  //   &__details {
+  //   }
+
+  &__ingredients-list {
+    list-style: none;
+    flex: 1;
+    font-size: 1.6rem;
+    padding: 3rem 6rem;
+    column-count: 2;
+    column-gap: 5rem;
+    column-rule: 2px solid rgba($color-black, 0.5);
+    text-transform: capitalize;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &__details-list {
+    @extend .recipe__ingredients-list;
+  }
+
+  &__instructions-list {
+    list-style: none;
+    padding: 3rem 6rem;
+    text-transform: capitalize;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1.5em;
+    }
+
+    span {
+      text-decoration: underline;
+    }
+  }
+
+  &__healthbenifits-list {
+    @extend .recipe__instructions-list;
+  }
+
+  &__author {
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    flex: 1;
+    padding: 3rem 6rem;
+
+    &-image {
+      display: block;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+      border: 2px solid $light-accent-color;
+    }
+
+    &-name {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin-left: 1rem;
+    }
+
+    &-box {
+      flex: 0 0 50%;
+
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__link-box {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+  }
+}
+
+.nutri {
+  &-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex: 1;
+  }
+
+  &__list {
+    list-style: none;
+    flex: 0 0 30%;
+    padding: 2rem;
+    border: 2px solid $color-black;
+    background-color: $color-white;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.6rem;
+    }
+  }
+}

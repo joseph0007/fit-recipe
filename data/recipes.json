@@ -1,0 +1,152 @@
+[
+  {
+    "name": "anabolic french toast",
+    "ingredients": [
+      {
+        "ingredientName": "bread",
+        "quantity": "60",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "vanilla extract",
+        "quantity": "20",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "cinnamon",
+        "quantity": "20",
+        "unit": "g"
+      }
+    ],
+    "cookingTime": "20min",
+    "servings": 1,
+    "tags": ["vegetarian", "sugar-free"],
+    "cuisines": "andhra",
+    "author": "5f97d53e92794a4300821423"
+  },
+  {
+    "name": "besan ladoo",
+    "ingredients": [
+      {
+        "ingredientName": "besan",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "ghee",
+        "quantity": "20",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "sugar",
+        "quantity": "20",
+        "unit": "g"
+      }
+    ],
+    "cookingTime": "50min",
+    "servings": 8,
+    "tags": ["vegetarian"],
+    "cuisines": "indian",
+    "author": "5f97d53e92794a4300821423"
+  },
+  {
+    "name": "fried rice",
+    "ingredients": [
+      {
+        "ingredientName": "rice",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "vegetables",
+        "quantity": "100",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "salt",
+        "quantity": "5",
+        "unit": "g"
+      }
+    ],
+    "cookingTime": "20min",
+    "servings": 1,
+    "tags": ["vegetarian", "sugar-free"],
+    "cuisines": "chinese",
+    "author": "5f97d53e92794a4300821423"
+  },
+  {
+    "name": "oat meal",
+    "ingredients": [
+      {
+        "ingredientName": "oat",
+        "quantity": "60",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "milk",
+        "quantity": "200",
+        "unit": "ml"
+      },
+      {
+        "ingredientName": "cinnamon",
+        "quantity": "5",
+        "unit": "g"
+      }
+    ],
+    "cookingTime": "20min",
+    "servings": 1,
+    "tags": ["vegetarian", "sugar-free"],
+    "cuisines": "andhra",
+    "author": "5f97d53e92794a4300821423"
+  },
+  {
+    "name": "yoghurt bomb",
+    "ingredients": [
+      {
+        "ingredientName": "yoghurt",
+        "quantity": "60",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "vanilla extract",
+        "quantity": "20",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "cinnamon",
+        "quantity": "20",
+        "unit": "g"
+      }
+    ],
+    "cookingTime": "20min",
+    "servings": 1,
+    "tags": ["vegetarian", "gluten-free"],
+    "cuisines": "andhra",
+    "author": "5f97d53e92794a4300821423"
+  },
+  {
+    "name": "sandwich",
+    "ingredients": [
+      {
+        "ingredientName": "bread",
+        "quantity": "60",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "egg",
+        "quantity": "200",
+        "unit": "g"
+      },
+      {
+        "ingredientName": "chilli",
+        "quantity": "20",
+        "unit": "g"
+      }
+    ],
+    "cookingTime": "10min",
+    "servings": 1,
+    "tags": ["vegetarian", "lactose-free"],
+    "cuisines": "andhra",
+    "author": "5f97d53e92794a4300821423"
+  }
+]

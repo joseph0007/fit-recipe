@@ -1,0 +1,10 @@
+.recipe-container {
+  overflow-y: scroll;
+  padding: 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 29rem));
+  grid-auto-rows: 42rem;
+  gap: 7rem;
+  justify-content: center;
+}
